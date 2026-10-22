@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.frameless.panel'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.frameless.panel'
+        minSdk 26
+        targetSdk 33
+        versionCode 14
+        versionName '1.4.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
